@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+double calculateInterest(double p, double t, double r);
+int main()
+{
+ 
+  double p, t, r, interest;
+
+
+  cout << "Enter principal amount, time and rate:";
+  cin >> p >> t >> r;
+
+  interest = calculateInterest(p, t, r);
+
+  cout << "Interest = " << interest << endl;
+
+  return 0;
+}
+
+{
+    return (p*t*r)/100;
+}
