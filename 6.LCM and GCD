@@ -1,0 +1,32 @@
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+ int i, j,num;
+ cout<<"enter the num value";
+ cin>>num;
+ for(i=1; i<=num; i++)
+ {
+  for(j=1; j<i*2; j++) 
+  {
+   if(j%2 == 0)
+    cout << "";
+   else 
+    cout << i;
+  }
+  cout << "\n";
+ }
+ for(i=num-1; i>=1; i--)
+ {
+  for(j=1; j<i*2; j++)
+  {
+   if(j%2 == 0)
+    cout << "";
+   else 
+    cout << i; 
+  }
+  cout << "\n";
+ }
+ return 0;
+}
